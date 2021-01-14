@@ -9,8 +9,8 @@ class PostAdmin(admin.ModelAdmin):
     search_fields = ['title']
     ordering = ["title"]
     
-    def get_queryset(self,request):
-    	return Post.objects.filter(approved=True)
+    #def get_queryset(self,request):
+    #	return Post.objects.filter(approved=True)
 
 
 

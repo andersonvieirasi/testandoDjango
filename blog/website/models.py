@@ -22,6 +22,8 @@ class Post(models.Model):
     published_date = models.DateTimeField("Data da Publicação", blank=True, 
     	                        null=True, auto_now=True)
 
+    image = models.ImageField("Imagem", upload_to='media', null=True, blank=True)
+
     def __str__(self):
         return self.title
 
